@@ -7,11 +7,11 @@ public class DataType {
 	};
 
 	//设置  赋值
-	public void setAge(int ageNum){
+	public void SetAge(int ageNum){
 		DogAge = ageNum;
 	}
 	//获取  值
-	public int getAge(){
+	public int GetAge(){
 		System.out.println("小狗的年龄是:" + DogAge);
 		return DogAge;
 	}
@@ -26,9 +26,9 @@ public class DataType {
 		//创建 对象
 		DataType DogName = new DataType("tome");
 		//通过方法设置对象
-		DogName.setAge(10);
+		DogName.SetAge(10);
 		//通过方法获取对象
-		DogName.getAge();
+		DogName.GetAge();
 		//直接访问成员变量
 	    System.out.println("直接访问方法下的成员变量" + DogName.DogAge);
 	}
