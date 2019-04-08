@@ -7,7 +7,7 @@ class ImportDemo2
 		//创建两个类
 		ImportDemo1 demoOne = new ImportDemo1("小明");
 		ImportDemo1 demoTwo = new ImportDemo1("小白");
-		//分别赋值
+		//分别复制
 		demoOne.demo1SetAge(20);
 		demoOne.demo1SetNames("程序");
 		demoOne.demo1SetSalay(20.1);
