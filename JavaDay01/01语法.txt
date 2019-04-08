@@ -1,0 +1,88 @@
+对象：对象是类的一个实例，有状态和行为。例如，一条狗是一个对象，它的状态有：颜色、名字、品种；行为有：摇尾巴、叫、吃等。
+类：类是一个模板，它描述一类对象的行为和状态。
+方法：方法就是行为，一个类可以有很多方法。逻辑运算、数据修改以及所有动作都是在方法中完成的。
+实例变量：每个对象都有独特的实例变量，对象的状态由这些实例变量的值决定。
+
+
+敏感 ：  结尾加  ；  （运行报错）
+大小写敏感：Java是大小写敏感的，这就意味着标识符Hello与hello是不同的。
+类名：          对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 MyFirstJavaClass 。
+方法名：		所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。
+源文件名：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记Java是大小写敏感的），文件名的后缀为.java。（如果文件名和类名不相同则会导致编译错误）。
+主方法入口： 所有的Java 程序由  public static void main(String []args)   方法开始执行
+
+
+Java变量
+		Java中主要有如下几种类型的变量
+局部变量
+		类变量（静态变量）
+		成员变量（非静态变量）
+		Java数组
+		数组是储存在堆上的对象，可以保存多个同类型变量。在后面的章节中，我们将会学到如何声明、构造以及初始化一个数组。
+		
+		
+关键字：
+
+		访问控制	
+						private	私有的
+						protected	受保护的
+						public	公共的
+						
+		类、方法和变量修饰符	
+						abstract	声明抽象
+						class	类
+						extends	扩充,继承
+						final	最终值,不可改变的
+						implements	实现（接口）
+						interface	接口
+						native	本地，原生方法（非Java实现）
+						new	新,创建
+						static	静态
+						strictfp	严格,精准
+						synchronized	线程,同步
+						transient	短暂
+						volatile	易失
+						程序控制语句	break	跳出循环
+						case	定义一个值以供switch选择
+						continue	继续
+						default	默认
+						do	运行
+						else	否则
+						for	循环
+						if	如果
+						instanceof	实例
+						return	返回
+						switch	根据值选择执行
+						while	循环
+						
+			错误处理	
+						assert	断言表达式是否为真
+						catch	捕捉异常
+						finally	有没有异常都执行
+						throw	抛出一个异常对象
+						throws	声明一个异常可能被抛出
+						try	捕获异常
+						
+			包相关	
+						import	引入
+						package	包
+						
+			基本类型	
+						boolean	布尔型
+						byte	字节型
+						char	字符型
+						double	双精度浮点
+						float	单精度浮点
+						int	整型
+						long	长整型
+						short	短整型
+						
+			变量引用	
+						super	父类,超类
+						this	本类
+						void	无返回值
+						
+			保留关键字	
+						goto	是关键字，但不能使用
+						const	是关键字，但不能使用
+						null	空
