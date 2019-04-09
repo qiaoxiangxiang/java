@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body,p,h1,h2,h3,h4,h5,h6,ul,li,img{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .box{
+            width: 100%;
+            background: rgba(0,0,0,.7);
+            position: fixed;
+            z-index: 2;
+        }
+        .navUl{
+            width: 1200px;
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            list-style: none;
+        }
+        .navLi{
+            float: left;
+            width: 13%;
+            line-height: 50px;
+            margin-left: 13.7px;
+            text-align: center;
+            transition: all .2s linear;
+        }
+        .navLi a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .navLi:nth-of-type(1){
+            background: #0199ec;
+        }
+        .navLi:hover{
+            background: #0199ec;
+            
+        }
+        .navLi:hover a{
+            color: #fff;
+        }
+
+        .boxImg{
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: none">
+        <div class="box">
+            <ul class="navUl">
+                <li class="navLi"><a href="https://www.tmall.com/">天猫</a></li>
+                <li class="navLi"><a href="https://www.taobao.com/">淘宝</a></li>
+                <li class="navLi"><a href="https://www.jd.com/">京东</a></li>
+                <li class="navLi"><a href="https://www.suning.com/">苏宁</a></li>
+                <li class="navLi"><a href="https://www.baidu.com/">百度</a></li>
+                <li class="navLi"><a href="http://www.kugou.com/">酷狗</a></li>
+                <li class="navLi"><a href="https://www.daishumed.com/">袋鼠</a></li>
+            </ul>
+        </div>
+        <img class="boxImg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554804560369&di=be5f817d0d9b88566acf448988a424f0&imgtype=0&src=http%3A%2F%2Fwww.08lr.cn%2Fuploads%2Fallimg%2F170427%2F1-1F42G52044.jpg" alt="">
+    </div>
+
+<table border="1" width="200px" height="200px">
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr>
+        <td  colspan="2"></td>
+    </tr>
+</table>
+
+<table border="1" width="200px" height="200px">
+    <tr>
+        <td rowspan="4"></td>
+        <td colspan="4"></td>
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="2"></td>
+        <td rowspan="4"></td>
+
+    </tr>
+    <tr>
+        <td></td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr>
+        <td  colspan="2"></td>
+    </tr>
+    <tr>
+        <td  colspan="4"></td>
+    </tr>
+</table>
+
+<table border="1" width="200px" height="200px">
+        <tr>
+            <td rowspan="6"></td>
+            <td colspan="6"></td>
+        </tr>
+    <tr>
+        <td rowspan="4"></td>
+        <td colspan="4"></td>
+            <td rowspan="6"></td>
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="2"></td>
+        <td rowspan="4"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr>
+        <td  colspan="2"></td>
+    </tr>
+    <tr>
+        <td  colspan="4"></td>
+    </tr>
+        <tr>
+            <td  colspan="6"></td>
+        </tr>
+</table>
+
+<table id="tab"></table>
+</body>
+<script src="https://www.daishumed.com/js/jquery-2.1.4.js"></script>
+<script>
+    function num(a){
+        if(a<2){alert("最小值不能小于2");return;}
+        if(a%2 !=0){
+            alert("只能输入偶数，"+(a-0+1)+'是否可以？');
+            a = a+1;
+        }
+        for(i = 0;i<a/2;i++){
+            $("#tab").append(`
+                
+            `)
+        }
+    }
+    
+</script>
+</html>
