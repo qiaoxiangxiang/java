@@ -1,0 +1,98 @@
+class StringF 
+{
+	public static void main(String[] args) 
+	{
+		int num = 10;
+		char[] array = {'你','好','世','界'};
+		String[] a = {"Nike背包", "Adidas运动衫", "李宁运动鞋", "Kappa外套", "361腰包"};
+		//{'r', 'u', 'n', 'o', 'o', 'b' };
+		boolean b = true;
+		
+		//String.valueOf() 可以转换类型
+		System.out.println(String.valueOf(num));
+		System.out.println(String.valueOf(array));
+		System.out.println(String.valueOf(b));
+		//String.trim() 去除空格
+		String stings = "      holler world;";
+		System.out.println("未去空格" + stings);
+		System.out.println("去空格" + stings.trim());
+		//字符转数组  通过for循环
+
+
+		//二、JSON 字符串 与 java 对象的转换
+
+		//1. 把java 对象列表转换为json对象数组，并转为字符串
+
+		//	JSONArray array = JSONArray.fromObject(list);
+		//	String jsonstr = array.toString();
+
+		//2. 把java对象转换成json对象，并转化为字符串
+
+		//	JSONObject object = JSONObject.fromObject(user);
+		//    Log4jInit.ysulogger.debug(object.toString());
+
+		//3.把JSON字符串转换为JAVA 对象数组
+
+		//	JSONArray json = JSONArray.fromObject(userStr);//userStr是json字符串
+		//	List<User> users= (List<User>)JSONArray.toCollection(json, User.class);
+		
+		//4.把JSON字符串转换为JAVA 对象
+			
+		//	JSONObject jsonobject = JSONObject.fromObject(jsonStr);
+		//　User user= (User)JSONObject.toBean(object,User.class);
+
+
+		//StringBuffer 速度慢 线程安全
+		//StringBuilder 速度快 线程不安全的
+
+		String buffers = "holler";
+		StringBuffer buffer = new StringBuffer(buffers);
+		//  public StringBuffer append(String s)
+		//将指定的字符串追加到此字符序列。
+
+		buffer.append(" world;");
+		System.out.println("stringbuffer 下的 append 后面追加 :" + buffer);
+
+		//	public StringBuffer reverse()
+		//将此字符序列用其反转形式取代。
+
+		buffer.reverse();
+		System.out.println("stringbuffer 下的 reverse 字符反转 :" + buffer);
+
+		//	public delete(int start, int end)
+		//移除此序列的子字符串中的字符。
+
+		buffer.reverse().delete(0,6);
+		System.out.println("stringbuffer 下的 delete 字符删除 :" + buffer);
+
+		//	public insert(int offset, int i)
+		//将 int 参数的字符串表示形式插入此序列中。
+
+		buffer.insert(0,"holler");
+		System.out.println("stringbuffer 下的 insert 字符插入 :" + buffer);
+
+		//	replace(int start, int end, String str)
+		//使用给定 String 中的字符替换此序列的子字符串中的字符。
+		
+		buffer.replace(7,12,"holler");
+		System.out.println("stringbuffer 下的 replace 字符替换 :" + buffer);
+		
+		String buffer1 = new String(buffer);
+		if(buffer1 == buffers){
+			System.out.println("给 buffers 与 buffer 比较 buffer == buffers :" + (buffer1 == buffers));
+		}else{
+			System.out.println("给 buffers 与 buffer 比较 buffer == buffers :" + (buffer1 == buffers));
+		}
+
+		for(String name : a){
+			text(name);
+			
+		};
+		
+	};
+
+	public static void text(String name){
+		System.out.println("这次商品有：" + name);
+	}
+
+}

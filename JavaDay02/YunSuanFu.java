@@ -1,0 +1,13 @@
+class YunSuanFu 
+{
+	public static void main(String[] args) 
+	{
+		int a = 5;//定义一个变量；
+        int b = 5;
+        int x = 2*++a;
+        int y = 2*b++;
+		// b++ 运算前值为5  运算完毕后 b++会执行 b= b+1; 因此 y = 5; b = 6;
+        System.out.println("自增运算符前缀运算后a="+a+",x="+x);
+        System.out.println("自增运算符后缀运算后b="+b+",y="+y);
+	}
+}
